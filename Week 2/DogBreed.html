@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <style>
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+      .abc {
+        display: flex;
+      }
+      .vertical-menu {
+        width: 300px;
+        height: 700px;
+        overflow-y: auto;
+      }
+
+      .vertical-menu ul {
+        background-color: white;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+      }
+
+      .vertical-menu ul:hover {
+        background-color: #ccc;
+      }
+
+      .vertical-menu ul.active {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body bgcolor="#eee">
+    <div class="abc">
+      <div class="vertical-menu">
+        <ul style="list-style-type:none;" id="myList"></ul>
+      </div>
+      <div style="flex-grow : 1">
+        <img
+          id="myImg"
+          src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MzAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMTA1NzIxNTkuanBn"
+          width="304"
+          height="228"
+        />
+      </div>
+    </div>
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          dName = JSON.parse(this.responseText);
+          console.log(dName);
+          for (i = 0; i < dName.message.length; i++) {
+            var x = document.createElement("LI");
+            var t = document.createTextNode(dName.message[i]);
+            x.appendChild(t);
+            document.getElementById("myList").appendChild(x);
+            x.addEventListener("click", function(event) {
+              console.log(event.target.innerHTML);
+              var y = event.target.innerHTML;
+              myfunction(y);
+            });
+          }
+        }
+      };
+
+      xhttp.open("GET", "https://dog.ceo/api/breeds/list", true);
+      xhttp.send();
+
+      function myfunction(item) {
+        function reqListener() {
+          console.log(this.responseText);
+          dName = JSON.parse(this.responseText);
+          console.log(dName);
+          var r = dName.message;
+          document.getElementById("myImg").src = r;
+        }
+
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+
+        oReq.open(
+          "GET",
+          "https://dog.ceo/api/breed/" + item + "/images/random"
+        );
+        oReq.send();
+      }
+    </script>
+  </body>
+</html>
