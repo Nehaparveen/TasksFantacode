@@ -38,5 +38,5 @@ var xhttp = new XMLHttpRequest();
           "GET",
           "https://dog.ceo/api/breed/" + item + "/images/random"
         );
-        oReq.send();
+          oReq.send();
       }
