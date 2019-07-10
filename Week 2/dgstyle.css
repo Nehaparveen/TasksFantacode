@@ -1,0 +1,44 @@
+
+div.a {
+        
+    flex-grow: 1;
+}
+    .z{
+     font-size: 150%;
+     font-weight: bold;
+      font-variant: small-caps;
+      text-align: center;
+    }       
+   
+   img {
+     margin: 0 auto;
+     display: block;
+     margin-right: auto;
+     position : center ;
+   }
+   .abc {
+     display: flex;
+   }
+   .vertical-menu {
+     width: 300px;
+     height: 700px;
+    
+      
+   }
+
+   .vertical-menu ul {
+     background-color: white;
+     color: black;
+     display: block;
+     padding: 12px;
+     text-decoration: none;
+   }
+
+   .vertical-menu ul:hover {
+     background-color: #ccc;
+   }
+
+   .vertical-menu ul.active {
+     background-color: #4caf50;
+     color: white;
+}
