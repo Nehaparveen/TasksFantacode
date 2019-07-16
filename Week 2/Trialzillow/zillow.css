@@ -1,7 +1,8 @@
 .navbar{
     display:flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 14px;
+    background-color: white;
     
 }
 
@@ -101,18 +102,147 @@
   /*Resize the wrap to see the search bar change!*/
   .wrap{
     width: 46%;
-position: absolute;
-top: 51%;
-left: 50%;
-transform: translate(-50%, -50%);
-  }
 
-  .abcd {
-    background-image: url("http://rahasampo.info/wp-content/uploads/2018/12/cost-to-build-a-pole-barn-house-per-square-foot-average-cost-of-pole-barn-home-pole-barn-cost-per-sq-ft-image-of-small-pole-cost-to-build-a-pole-barn-house-per-square-foot.jpg");
+  }
+ .midtex{
+   color: white;
+ }
+  .middle {
+    background-image: url("https://s.zillowstatic.com/homepage/static/_Desktop_overlay.jpg");
     width: 100%;
     height: 544px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    }
 .searchTerm:hover { border: 1px solid #00B4CC}
+
+.final {
+  display: flex;
+
+}
+
+
+.box {
+
+  border: 2px solid transparent;
+  width: 28%;
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+  box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+  
+
+}
+
+.container {
+
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  margin-bottom: 62px;
+
+}
+
+
+
+.last{
+  background-color: yellow;
+}
+
+.box:hover {box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+  transform: scale(1.02) translate(0px, -8px);
+  transition: all 300ms ease-in-out 0s;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.box:hover .button2{background-color: #008CBA;
+  color: white;
+}
+
+
+
+ .text{
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: "Open Sans",Gotham,gotham,Tahoma,Geneva,sans-serif;
+
+ }
+ 
+ 
+ .mid2 {
+
+  background-color: rgb(249, 249, 251);
+  font-size: 42px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 59px;
+  margin-bottom: 81px;
+  align-items: center;
+
+}
+.hl{
+ 
+  border-bottom: 3px solid yellow;
+  width: 173px;
+  margin-top: 75px;
+    } 
+    .head{
+      margin: 0;
+      text-align: center;
+      margin-bottom: 0px;
+
+margin-bottom: 1rem;
+    }
+    body{
+      background-color: rgb(249, 249, 251);
+    }
+.box1{
+  margin: 0 1.5rem;
+}
+
+.button {
+
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 7px;
+  height: 49px;
+
+}
+.button2 {
+  background-color: white; 
+  color: #0061d9; 
+  border: 1px solid grey;
+  width: 143px;
+
+}
+.head1{
+  color:white;
+}
