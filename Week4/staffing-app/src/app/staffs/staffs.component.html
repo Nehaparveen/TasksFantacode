@@ -1,0 +1,20 @@
+<h2>Best Staffs</h2>
+<ul class="staffs">
+  <li *ngFor="let staff of staffs" 
+   [class.selected]="staff === selectedStaff" 
+   (click)="onSelect(staff)">
+    <span class="badge">{{staff.id}}</span> {{staff.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedStaff">
+
+<h2>{{selectedStaff.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedStaff.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="selectedStaff.name" placeholder="name"/>
+  </label>
+</div>
+</div>
+
