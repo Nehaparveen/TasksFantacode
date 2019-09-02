@@ -1,0 +1,38 @@
+
+<h1 class="hed">{{title}}</h1>
+<div class="whole">
+<div class="container">
+    <h1>{{title}}</h1>
+   
+    <div class="data">
+           
+                     <div class=btnp>
+                            <button  (click)="AddButton()" id="bt" class="btn">+</button>
+                
+                                <app-edit (addEntry)="addEntry($event)" *ngIf="show" [isedit]="false" (close)="AddClosed()"></app-edit>
+
+                          
+                        </div>
+                  
+                        
+                        <app-list 
+                        *ngFor="let entry of entries"
+                        [entry]="entry"
+                        (deleteEntry)="deleteEntry($event)"
+                        >
+
+                        </app-list>
+                  
+       
+        
+    </div>
+   
+   
+</div>
+
+</div>
+
+
+
+
+

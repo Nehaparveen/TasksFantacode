@@ -1,0 +1,50 @@
+.cz{
+    display: flex;
+flex-direction: column;
+}
+
+.edit1{
+    width: 300px;
+
+    height: 120px;
+    
+    text-align: center;
+    
+    border: solid 1px #bac0c3;
+    
+    border-radius: 5px;
+    
+    box-shadow: 5px 10px 25px 5px #575754;
+    
+    position: fixed;
+    
+    left: 50%;
+    
+    top: 50%;
+    
+    margin-left: -150px;
+    
+    margin-top: -60px;
+    
+    z-index: 1001;
+    
+
+    
+    background: #fff;
+    
+    animation: animationDropCenter 1s;
+}
+
+.btn{
+    border-radius: 10px;
+    background: #575754;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    padding: 10px
+}

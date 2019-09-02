@@ -1,0 +1,9 @@
+   <div  class="edit1" >
+      <form  class="form"  >
+        <input name="title" type="text" [(ngModel)]="entry.title" placeholder="Add Todo.....">
+        <input name="body" type="text" [(ngModel)]="entry.body" placeholder="Add Description">
+        <button (click)="onSubmit()" *ngIf= "!isedit" class="btn">submit</button>
+        <button (click)="onedit()" *ngIf= "isedit" class="btn">submit</button>
+        <button   class="btn" (click)="OnClose()" >Back</button>
+    </form>
+  </div>

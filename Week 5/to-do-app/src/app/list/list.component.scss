@@ -1,0 +1,98 @@
+.detail{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid gainsboro;
+    color: #05859e;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.detail:hover {
+    box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+    transform: scale(1.02) translate(0px, -8px);
+    transition: all 300ms ease-in-out 0s;
+}
+
+.cz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ed{
+    background: #86bfe6;
+padding: 42px;
+margin: 34px;
+}
+
+.dis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.del{
+    border-radius:49%;
+    background: red;
+    border:none;
+    font-size: 16px;
+    padding: 4px;
+    margin: 8px;
+}
+.del:hover{
+background: rgb(214, 79, 79);
+}
+.iscomplete{
+    text-decoration: line-through;
+}
+
+.cz{
+    display: flex;
+flex-direction: column;
+}
+
+.edit1{
+    width: 300px;
+
+    height: 120px;
+    
+    text-align: center;
+    
+    border: solid 1px #bac0c3;
+    
+    border-radius: 5px;
+    
+    box-shadow: 5px 10px 25px 5px #575754;
+    
+    position: fixed;
+    
+    left: 50%;
+    
+    top: 50%;
+    
+    margin-left: -150px;
+    
+    margin-top: -60px;
+    
+    z-index: 1001;
+    
+
+    
+    background: #fff;
+    
+    animation: animationDropCenter 1s;
+}
+
+.btn{
+    border-radius: 10px;
+    background: #575754;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    padding: 10px
+}

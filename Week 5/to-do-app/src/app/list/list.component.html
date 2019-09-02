@@ -1,0 +1,28 @@
+
+
+          <div class="detail"
+          [class.selected]="entry === selectedEntry"
+          (click)="onSelect(entry)"> 
+            
+               
+              <div class="dis">
+               
+               
+                  <div class="ab">
+                      <input (change)="onToggle(entry)" type="checkbox"/>
+                
+                      <p> Title: {{entry.title}} </p>
+                      <p> Description: {{entry.body}} </p>
+                  </div>
+                      
+                 <div class="ad">
+                    <button (click)="onDelete(entry)" class="del "> x </button>      
+                  
+                 </div>
+                </div> 
+        </div>
+
+        
+
+<app-edit *ngIf="selectedEntry" [isedit]="true" [entry]="selectedEntry" (editEntry)="editEntry($event)" (close)="AddClosed()"></app-edit>
+
